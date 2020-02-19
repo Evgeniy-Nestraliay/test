@@ -23,7 +23,7 @@ if(isset($_POST['add_user'])){
 	$query2 = "INSERT INTO user (username,role_id) VALUES ('".$user."','".intval($role_id)."')";
 	$result2 = mysqli_query($conn, $query2);
 	if($result2){
-		echo '<script type="text/javascript">alert("User '. $user . ' with '. $role_id . ' role was added successfully") </script>';
+		echo '<script type="text/javascript">alert("User '. $user . ' was added successfully") </script>';
 	}
 	else{
 		echo '<script type="text/javascript">alert("Error") </script>';
